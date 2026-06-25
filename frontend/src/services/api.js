@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'https://ai-interview-project-p9nc.onrender.com/api'
 });
 
 // Har request mein token automatically lagao
