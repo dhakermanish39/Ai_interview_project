@@ -1,0 +1,73 @@
+.weak-areas { display: flex; flex-wrap: wrap; gap: 10px; }
+.weak-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fef2f2;
+  border: 1.5px solid #fecaca;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #dc2626;
+  text-transform: capitalize;
+}
+.weak-score {
+  background: #dc2626;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.tip-card { transition: transform 0.2s; }
+.tip-card:hover { transform: translateY(-3px); }
+
+.tip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 8px;
+}
+.tip-header h3 { font-size: 16px; color: #1f2937; }
+
+.priority-badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.tip-text {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.tip-resource {
+  display: flex;
+  gap: 8px;
+  background: #f0f9ff;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #0369a1;
+}
+
+body.dark .tip-header h3 { color: #e2e8f0; }
+body.dark .tip-text { color: #94a3b8; }
+body.dark .tip-resource { background: #0c2340; color: #60a5fa; }
+body.dark .weak-chip { background: #450a0a; border-color: #991b1b; color: #fca5a5; }
+
+@media (max-width: 768px) {
+  .tips-grid { grid-template-columns: 1fr; }
+}

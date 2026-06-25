@@ -1,0 +1,36 @@
+.timer {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer-circle {
+  width: 70px;
+  height: 70px;
+  transform: rotate(-90deg);
+  position: absolute;
+}
+.timer-bg {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 3;
+}
+.timer-fill {
+  fill: none;
+  stroke: #4f46e5;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s linear, stroke 0.3s;
+}
+.timer.warning .timer-fill { stroke: #f59e0b; }
+.timer.danger .timer-fill { stroke: #ef4444; }
+.timer-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
+  z-index: 1;
+}
+.timer.warning .timer-text { color: #f59e0b; }
+.timer.danger .timer-text { color: #ef4444; }

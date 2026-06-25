@@ -1,0 +1,93 @@
+.dashboard {
+  padding: 30px 20px;
+}
+
+.welcome-banner {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.welcome-banner h2 { font-size: 22px; margin-bottom: 6px; }
+.welcome-banner p { opacity: 0.9; }
+.welcome-banner .btn-primary {
+  background: white;
+  color: #4f46e5;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.stat-card {
+  text-align: center;
+}
+.stat-card h3 {
+  font-size: 32px;
+  color: #4f46e5;
+  margin-bottom: 6px;
+}
+.stat-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.upload-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffbeb;
+  border: 1.5px solid #fcd34d;
+  margin-bottom: 24px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}
+.empty-state button { margin-top: 12px; }
+
+.sessions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sessions-table th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #f9fafb;
+  color: #555;
+  font-size: 13px;
+  border-bottom: 1.5px solid #e5e7eb;
+}
+.sessions-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.badge {
+  background: #ede9fe;
+  color: #4f46e5;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.score { font-weight: 700; }
+.score.good { color: #10b981; }
+.score.avg { color: #f59e0b; }
+.score.low { color: #ef4444; }
+
+@media (max-width: 768px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .welcome-banner { flex-direction: column; text-align: center; }
+}

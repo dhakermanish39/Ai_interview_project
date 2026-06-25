@@ -1,0 +1,116 @@
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.leaderboard-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    transition: transform 0.2s;
+}
+
+.leaderboard-card:hover {
+    transform: translateX(4px);
+}
+
+.leaderboard-card.is-me {
+    border: 2px solid #4f46e5;
+    background: #fafafe;
+}
+
+.rank {
+    font-size: 24px;
+    font-weight: 800;
+    min-width: 48px;
+    text-align: center;
+    color: #4f46e5;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.user-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-role {
+    font-size: 13px;
+    color: #888;
+    margin-top: 2px;
+}
+
+.you-badge {
+    background: #ede9fe;
+    color: #4f46e5;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.user-stats {
+    display: flex;
+    gap: 24px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-val {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1f2937;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #888;
+}
+
+body.dark .leaderboard-card.is-me {
+    background: #1e293b;
+}
+
+body.dark .user-name {
+    color: #e2e8f0;
+}
+
+body.dark .stat-val {
+    color: #e2e8f0;
+}
+
+@media (max-width: 600px) {
+    .user-stats {
+        gap: 12px;
+    }
+
+    .stat-val {
+        font-size: 14px;
+    }
+}
